@@ -18,6 +18,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Job-level so the build and the PDF renderer agree on the prefix. If only
+    # the build sees it, the PDF server 404s every asset and silently renders
+    # unstyled pages.
+    env:
+      # Project pages are served from /<repo>/. Set this to "/" when a custom
+      # domain is pointed at the site.
+      PATH_PREFIX: /game-rules/
     steps:
       - uses: actions/checkout@v4
 
@@ -30,10 +37,6 @@ jobs:
 
       - name: Build site
         run: npm run build
-        env:
-          # Project pages are served from /<repo>/. Set this to "/" when a
-          # custom domain is pointed at the site.
-          PATH_PREFIX: /game-rules/
 
       # ubuntu-latest ships with Chrome preinstalled, so the PDFs are rendered
       # by the same engine (and the same print CSS) as a local build.

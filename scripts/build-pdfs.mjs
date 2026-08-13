@@ -80,6 +80,11 @@ const MIME = {
   ".pdf": "application/pdf",
 };
 
+// Tracks what each render actually loaded, so a page that renders with no
+// stylesheet fails the build instead of quietly producing an unstyled PDF.
+let servedCss = 0;
+let missed = [];
+
 const server = createServer((req, res) => {
   let path = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
   if (PREFIX && path.startsWith(PREFIX)) path = path.slice(PREFIX.length);
@@ -88,10 +93,12 @@ const server = createServer((req, res) => {
   // normalize() collapses any ../ before we join, so requests stay in _site
   const file = join(SITE, normalize(path));
   if (!file.startsWith(SITE) || !existsSync(file) || statSync(file).isDirectory()) {
+    if (!path.endsWith("favicon.ico")) missed.push(req.url);
     res.writeHead(404).end("not found");
     return;
   }
 
+  if (extname(file) === ".css") servedCss++;
   res.writeHead(200, { "content-type": MIME[extname(file)] || "application/octet-stream" });
   createReadStream(file).pipe(res);
 });
@@ -117,9 +124,20 @@ for (const slug of slugs) {
   // GitHub's runners need the sandbox disabled.
   if (process.env.CI) args.unshift("--no-sandbox");
 
+  servedCss = 0;
+  missed = [];
+
   try {
     await run(chrome, args, { maxBuffer: 16 * 1024 * 1024 });
     if (!existsSync(out)) throw new Error("Chrome exited cleanly but wrote no file");
+    if (servedCss === 0) {
+      throw new Error(
+        `page loaded no stylesheet — the PDF would be unstyled.\n` +
+          `    PATH_PREFIX is ${JSON.stringify(process.env.PATH_PREFIX || "(unset)")}; ` +
+          `it must match the value used for the build.\n` +
+          (missed.length ? `    404s: ${missed.slice(0, 5).join(", ")}` : "")
+      );
+    }
     console.log(`  ${slug}.pdf`);
   } catch (err) {
     failed++;
