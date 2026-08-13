@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}{% if not isHome %} — {{ site.title }}{% endif %}</title>
+{% if standfirst %}<meta name="description" content="{{ standfirst }}">{% endif %}
+<link rel="stylesheet" href="{{ '/assets/style.css' | url }}">
+</head>
+<body>
+<div class="sheet">
+
+  {% if not isHome %}
+  <nav class="sitebar">
+    <a href="{{ '/' | url }}">&larr; {{ site.title }}</a>
+    <span>{{ site.tagline }}</span>
+  </nav>
+  {% endif %}
+
+  {{ content | safe }}
+
+</div>
+</body>
+</html>

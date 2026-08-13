@@ -1,0 +1,16 @@
+{
+  "name": "game-rules",
+  "version": "1.0.0",
+  "description": "Printable rules sheets for classic games",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "pdfs": "node scripts/build-pdfs.mjs",
+    "all": "npm run build && npm run pdfs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

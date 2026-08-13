@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+<header class="masthead">
+  {% if eyebrow %}<div class="eyebrow">{{ eyebrow }}</div>{% endif %}
+  <h1>{{ title }}</h1>
+  {% if standfirst %}<p class="standfirst">{{ standfirst }}</p>{% endif %}
+</header>
+
+<div class="actions">
+  <a href="{{ page.url | pdfUrl | url }}">Download PDF</a>
+  <a href="#" onclick="window.print();return false;">Print</a>
+</div>
+
+<div class="rules">
+{{ content | safe }}
+</div>
+
+{% if glossary %}
+<section class="glossary">
+  <h2>Glossary</h2>
+  <dl class="terms">
+    {% for entry in glossary %}
+    <div>
+      <dt>{{ entry.term }}</dt>
+      <dd>{{ entry.definition | safe }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+<footer>{{ footnote or site.footnote }}</footer>

@@ -1,0 +1,489 @@
+/* ==========================================================================
+   Game Rules — shared stylesheet
+
+   Themes: the bare :root block holds the complete light palette. The dark
+   palette is redefined twice — once behind prefers-color-scheme (guarded so
+   an explicit light choice still wins) and once behind [data-theme="dark"].
+   Every component reads tokens only, never a raw colour, so all three
+   viewer states resolve as a set.
+
+   Print: see the @media print block at the foot. The sheet becomes a single
+   continuous two-column stream so the rules and glossary pack together
+   rather than each balancing onto its own page.
+   ========================================================================== */
+
+:root {
+  --paper:        #F4F5F0;
+  --surface:      #FFFFFF;
+  --ink:          #1B1F19;
+  --ink-soft:     #5C6359;
+  --ink-faint:    #8A9086;
+  --rule:         #D6DACF;
+  --rule-strong:  #A9B0A3;
+  --cloth:        #175A3C;
+  --cloth-tint:   #E4EDE6;
+  --ball-red:     #B02A1E;
+  --ball-yellow:  #C39413;
+  --ball-white:   #6E7568;
+
+  --measure: 34rem;
+  --serif: "Iowan Old Style", Charter, "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:       #12150F;
+    --surface:     #1A1E17;
+    --ink:         #E7EAE0;
+    --ink-soft:    #A2A99A;
+    --ink-faint:   #757C6D;
+    --rule:        #2E342A;
+    --rule-strong: #4A5243;
+    --cloth:       #63C08C;
+    --cloth-tint:  #1D2A21;
+    --ball-red:    #E0705F;
+    --ball-yellow: #D9B44A;
+    --ball-white:  #B6BCAC;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper:       #12150F;
+  --surface:     #1A1E17;
+  --ink:         #E7EAE0;
+  --ink-soft:    #A2A99A;
+  --ink-faint:   #757C6D;
+  --rule:        #2E342A;
+  --rule-strong: #4A5243;
+  --cloth:       #63C08C;
+  --cloth-tint:  #1D2A21;
+  --ball-red:    #E0705F;
+  --ball-yellow: #D9B44A;
+  --ball-white:  #B6BCAC;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--cloth); }
+a:focus-visible,
+:focus-visible { outline: 2px solid var(--cloth); outline-offset: 2px; }
+
+.sheet {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem;
+}
+
+/* ---------- site chrome (screen only) ---------- */
+
+.sitebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.sitebar a { text-decoration: none; }
+.sitebar a:hover { text-decoration: underline; }
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+.actions a:hover { background: var(--cloth-tint); }
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 3px double var(--rule-strong);
+}
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cloth);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.standfirst {
+  margin: 0;
+  max-width: var(--measure);
+  color: var(--ink-soft);
+  font-size: 1.0625rem;
+}
+
+/* ---------- the rules themselves ----------
+   Each `##` in the Markdown becomes a numbered rule. The number comes from
+   a CSS counter rather than being typed, so inserting a rule renumbers the
+   rest automatically. */
+
+.rules {
+  counter-reset: rule;
+  margin-top: 2.75rem;
+  max-width: var(--measure);
+}
+
+.rules h2 {
+  counter-increment: rule;
+  position: relative;
+  margin: 2.5rem 0 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.rules > h2:first-child { margin-top: 0; }
+
+.rules h2::before {
+  content: counter(rule, decimal-leading-zero);
+  font-family: var(--sans);
+  font-size: 0.62em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+/* On wide screens the number hangs in the left margin. */
+@media (min-width: 48rem) {
+  .rules { margin-left: 3.5rem; }
+  .rules h2::before {
+    position: absolute;
+    left: -3.5rem;
+    top: 0.35em;
+  }
+}
+
+@media (max-width: 47.999rem) {
+  .rules h2::before { margin-right: 0.6em; }
+}
+
+.rules h3 {
+  margin: 1.1rem 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.rules p { margin: 0.7rem 0 0; }
+.rules ul, .rules ol { margin: 0.7rem 0 0; padding-left: 1.1rem; }
+.rules li { margin-bottom: 0.35rem; }
+.rules li::marker { color: var(--rule-strong); }
+.rules h3 + p { margin-top: 0.15rem; color: var(--ink-soft); }
+
+em { color: var(--ink); }
+
+/* A Markdown blockquote renders as the aside/callout box. */
+blockquote {
+  margin: 1rem 0 0;
+  padding: 0.85rem 1.1rem;
+  background: var(--cloth-tint);
+  border-left: 3px solid var(--cloth);
+  font-size: 0.95rem;
+}
+
+blockquote p { margin: 0; }
+
+/* ---------- tables ---------- */
+
+.table-wrap { overflow-x: auto; max-width: var(--measure); margin-top: 1rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.97rem;
+}
+
+th {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: left;
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid var(--rule-strong);
+  white-space: nowrap;
+}
+
+th:last-child, td:last-child { text-align: right; }
+
+td {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+}
+
+td:last-child {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  padding-left: 1.5rem;
+  white-space: nowrap;
+}
+
+/* Ball/token markers usable in any game's table cells. */
+.dot {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  margin-right: 0.45em;
+  vertical-align: 0.02em;
+}
+.dot.red { background: var(--ball-red); }
+.dot.yel { background: var(--ball-yellow); }
+.dot.wht { background: var(--ball-white); }
+.dot.both { background: linear-gradient(90deg, var(--ball-red) 50%, var(--ball-white) 50%); }
+
+/* ---------- diagrams ---------- */
+
+figure { margin: 1.25rem 0 0; max-width: var(--measure); }
+
+.diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 0.75rem;
+}
+
+.diagram .edge   { fill: none; stroke: var(--rule-strong); stroke-width: 2; }
+.diagram .pocket { fill: var(--rule-strong); }
+.diagram .marking { fill: none; stroke: var(--cloth); stroke-width: 1.5; }
+.diagram .spot   { fill: var(--ink); }
+.diagram text {
+  font-family: var(--sans);
+  font-size: 15px;
+  fill: var(--ink-faint);
+  text-anchor: middle;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+/* ---------- glossary ---------- */
+
+.glossary {
+  margin-top: 3.5rem;
+  padding-top: 1.75rem;
+  border-top: 3px double var(--rule-strong);
+}
+
+.glossary h2 { margin: 0 0 1rem; font-size: 1.3rem; font-weight: 600; }
+
+.terms {
+  display: grid;
+  gap: 0.9rem 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin: 0;
+}
+
+.terms div { break-inside: avoid; }
+
+.terms dt {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cloth);
+}
+
+.terms dd { margin: 0.15rem 0 0; font-size: 0.95rem; }
+
+.sheet > footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+}
+
+/* ---------- index page ---------- */
+
+.game-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.game-list li { border-bottom: 1px solid var(--rule); margin: 0; }
+
+.game-list a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  padding: 1.1rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.game-list a:hover .game-title { text-decoration: underline; }
+
+.game-title { font-size: 1.2rem; font-weight: 600; }
+
+.game-blurb {
+  flex: 1 1 18rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Print — US Letter, two columns
+   ========================================================================== */
+
+@media print {
+  /* !important so the print palette outranks the dark-theme guard, whose
+     :not() selector is more specific than a bare :root */
+  :root {
+    --paper:       #FFFFFF !important;
+    --surface:     #FFFFFF !important;
+    --ink:         #000000 !important;
+    --ink-soft:    #2E2E2E !important;
+    --ink-faint:   #5A5A5A !important;
+    --rule:        #C4C4C4 !important;
+    --rule-strong: #7E7E7E !important;
+    --cloth:       #14472F !important;
+    --cloth-tint:  #EFEFEF !important;
+    --ball-red:    #92251A !important;
+    --ball-yellow: #8A6810 !important;
+    --ball-white:  #6E6E6E !important;
+    --measure:     none !important;
+  }
+
+  @page { size: letter portrait; margin: 14mm 13mm; }
+
+  body { font-size: 9.6pt; line-height: 1.42; }
+
+  .sitebar, .actions { display: none !important; }
+
+  /* one continuous two-column stream, so the rules and glossary pack
+     together instead of each balancing onto its own page */
+  .sheet {
+    max-width: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 9mm;
+    column-fill: auto;
+  }
+
+  .masthead { column-span: all; gap: 0.4rem; padding-bottom: 0.7rem; }
+  .eyebrow { font-size: 7.5pt; }
+  h1 { font-size: 25pt; }
+  .standfirst { font-size: 9.8pt; max-width: 44em; }
+
+  .rules { margin: 0.9rem 0 0; max-width: none; }
+
+  .rules h2 {
+    font-size: 11.2pt;
+    margin: 0.95rem 0 0.3rem;
+    break-after: avoid;
+  }
+
+  /* the hanging number rejoins the heading — the gutter costs too much
+     width at ~90mm per column */
+  .rules h2::before {
+    position: static;
+    left: auto;
+    margin-right: 0;
+    content: counter(rule, decimal-leading-zero) "\2003";
+    font-size: 0.76em;
+    color: var(--cloth);
+  }
+
+  .rules p, .rules ul, .rules ol { margin-top: 0.4rem; }
+  .rules li { margin-bottom: 0.12rem; }
+  .rules h3 { margin-top: 0.35rem; }
+  p, li, dd { orphans: 2; widows: 2; }
+
+  figure, .table-wrap, blockquote { break-inside: avoid; max-width: none; }
+  figure { margin-top: 0.5rem; }
+  .diagram { padding: 0.35rem; }
+  figcaption { margin-top: 0.3rem; font-size: 7.4pt; }
+  blockquote { margin-top: 0.5rem; padding: 0.45rem 0.65rem; font-size: 9pt; }
+
+  table { font-size: 9.2pt; }
+  th { font-size: 6.8pt; padding-bottom: 0.35rem; }
+  td { padding: 0.28rem 0; }
+  .table-wrap { margin-top: 0.5rem; }
+
+  .glossary {
+    margin-top: 0.9rem;
+    padding-top: 0.7rem;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+  .glossary h2 { font-size: 11.2pt; margin-bottom: 0.45rem; }
+  .terms { display: block; columns: auto; }
+  .terms div { margin-bottom: 0.5rem; }
+  .terms dt { font-size: 7pt; }
+  .terms dd { font-size: 9pt; }
+
+  .sheet > footer {
+    margin-top: 0.9rem;
+    padding-top: 0.5rem;
+    font-size: 7.4pt;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

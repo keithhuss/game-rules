@@ -1,0 +1,57 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build site
+        run: npm run build
+        env:
+          # Project pages are served from /<repo>/. Set this to "/" when a
+          # custom domain is pointed at the site.
+          PATH_PREFIX: /game-rules/
+
+      # ubuntu-latest ships with Chrome preinstalled, so the PDFs are rendered
+      # by the same engine (and the same print CSS) as a local build.
+      - name: Render PDFs
+        run: npm run pdfs
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
