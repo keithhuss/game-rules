@@ -42,15 +42,20 @@ scripts/build-pdfs.mjs   renders _site/games/<slug>.pdf
 - **PDFs are rendered over HTTP, not `file://`.** The built HTML links assets
   by absolute path; over `file://` those resolve to the filesystem root and you
   silently get an unstyled 4-page PDF instead of a styled 2-page one.
-- **Never use `column-span: all` in the print layout.** WebKit abandons
-  multicol entirely when a spanner sits inside a paginated multicol container,
-  so Safari silently printed a single-column three-page sheet while Chrome
-  printed the intended two-column two-page one. The masthead therefore sits
-  *outside* the `.flow` container rather than spanning it.
+- **Safari does not render the two-column print layout. Unresolved.**
+  Chrome prints the intended two-column sheet; Safari prints single-column and
+  longer. Removing `column-span: all` (moving the masthead outside the `.flow`
+  multicol container, 2026-08-13) did **not** fix it — the current best guess
+  is that WebKit doesn't apply CSS multicol inside a paginated context at all,
+  which no restructuring would work around. The `.flow` structure was kept
+  anyway as it's cleaner, but don't credit it with a fix that never happened.
+  **The PDF is the canonical print artifact** — it's Chrome-rendered, so it's
+  correct in two columns no matter which browser the visitor uses. Treat the
+  page's own Print button as a convenience.
 - **Check print changes in Safari, not just Chrome.** The PDF pipeline is
-  Chrome-only, so a Chrome-clean layout proves nothing about what Keith gets
-  from ⌘P. Chrome does use the same fonts (Iowan Old Style / Avenir Next), so
-  metrics match — it's the layout algorithms that diverge.
+  Chrome-only, so a Chrome-clean layout proves nothing about what ⌘P gives.
+  Both use the same fonts (Iowan Old Style / Avenir Next), so metrics match —
+  it's the layout algorithms that diverge.
 - **`PATH_PREFIX`** is `/game-rules/` in the workflow because it's a project
   page. Change to `/` if a custom domain is ever pointed at it.
 - **Rule numbers are a CSS counter**, never typed. Don't number `##` headings.
