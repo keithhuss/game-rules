@@ -42,6 +42,15 @@ scripts/build-pdfs.mjs   renders _site/games/<slug>.pdf
 - **PDFs are rendered over HTTP, not `file://`.** The built HTML links assets
   by absolute path; over `file://` those resolve to the filesystem root and you
   silently get an unstyled 4-page PDF instead of a styled 2-page one.
+- **Never use `column-span: all` in the print layout.** WebKit abandons
+  multicol entirely when a spanner sits inside a paginated multicol container,
+  so Safari silently printed a single-column three-page sheet while Chrome
+  printed the intended two-column two-page one. The masthead therefore sits
+  *outside* the `.flow` container rather than spanning it.
+- **Check print changes in Safari, not just Chrome.** The PDF pipeline is
+  Chrome-only, so a Chrome-clean layout proves nothing about what Keith gets
+  from ⌘P. Chrome does use the same fonts (Iowan Old Style / Avenir Next), so
+  metrics match — it's the layout algorithms that diverge.
 - **`PATH_PREFIX`** is `/game-rules/` in the workflow because it's a project
   page. Change to `/` if a custom domain is ever pointed at it.
 - **Rule numbers are a CSS counter**, never typed. Don't number `##` headings.

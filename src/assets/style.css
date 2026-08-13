@@ -344,7 +344,7 @@ figcaption {
 
 .terms dd { margin: 0.15rem 0 0; font-size: 0.95rem; }
 
-.sheet > footer {
+.sheet footer {
   margin-top: 3rem;
   padding-top: 1rem;
   border-top: 1px solid var(--rule);
@@ -415,17 +415,21 @@ figcaption {
 
   .sitebar, .actions { display: none !important; }
 
-  /* one continuous two-column stream, so the rules and glossary pack
-     together instead of each balancing onto its own page */
-  .sheet {
-    max-width: none;
-    padding: 0;
+  .sheet { max-width: none; padding: 0; }
+
+  /* Everything below the masthead is one continuous two-column stream, so
+     the rules and glossary pack together instead of each balancing onto its
+     own page. The masthead sits OUTSIDE this container rather than using
+     column-span: all — WebKit abandons multicol altogether when a spanner
+     appears inside a paginated multicol, which silently gave Safari a
+     single-column, three-page render. */
+  .flow {
     columns: 2;
     column-gap: 9mm;
     column-fill: auto;
   }
 
-  .masthead { column-span: all; gap: 0.4rem; padding-bottom: 0.7rem; }
+  .masthead { gap: 0.4rem; padding-bottom: 0.7rem; }
   .eyebrow { font-size: 7.5pt; }
   h1 { font-size: 25pt; }
   .standfirst { font-size: 9.8pt; max-width: 44em; }
@@ -477,7 +481,7 @@ figcaption {
   .terms dt { font-size: 7pt; }
   .terms dd { font-size: 9pt; }
 
-  .sheet > footer {
+  .sheet footer {
     margin-top: 0.9rem;
     padding-top: 0.5rem;
     font-size: 7.4pt;

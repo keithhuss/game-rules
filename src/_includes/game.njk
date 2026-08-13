@@ -12,22 +12,30 @@ layout: base.njk
   <a href="#" onclick="window.print();return false;">Print</a>
 </div>
 
-<div class="rules">
-{{ content | safe }}
+{# Everything below the masthead is one flow, so in print it can become a
+   two-column stream without needing column-span on the masthead — WebKit
+   drops out of multicol entirely when a spanner sits inside a paginated
+   multicol container. #}
+<div class="flow">
+
+  <div class="rules">
+  {{ content | safe }}
+  </div>
+
+  {% if glossary %}
+  <section class="glossary">
+    <h2>Glossary</h2>
+    <dl class="terms">
+      {% for entry in glossary %}
+      <div>
+        <dt>{{ entry.term }}</dt>
+        <dd>{{ entry.definition | safe }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </section>
+  {% endif %}
+
+  <footer>{{ footnote or site.footnote }}</footer>
+
 </div>
-
-{% if glossary %}
-<section class="glossary">
-  <h2>Glossary</h2>
-  <dl class="terms">
-    {% for entry in glossary %}
-    <div>
-      <dt>{{ entry.term }}</dt>
-      <dd>{{ entry.definition | safe }}</dd>
-    </div>
-    {% endfor %}
-  </dl>
-</section>
-{% endif %}
-
-<footer>{{ footnote or site.footnote }}</footer>
