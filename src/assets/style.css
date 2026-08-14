@@ -252,15 +252,21 @@ th {
   white-space: nowrap;
 }
 
-th:last-child, td:last-child { text-align: right; }
-
 td {
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--rule);
   vertical-align: baseline;
 }
 
-td:last-child {
+th + th, td + td { padding-left: 1rem; }
+
+/* A column marked right-aligned in Markdown (`| ---: |`) is treated as
+   numeric: tabular figures, bold, no wrapping. Everything else wraps as
+   prose — otherwise a table of explanations is forced wider than the
+   measure and has to be scrolled sideways. */
+th[style*="right"], td[style*="right"] { text-align: right; }
+
+td[style*="right"] {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
   padding-left: 1.5rem;

@@ -75,7 +75,7 @@ A match is played to an agreed total — 100, 200 or 300 up are common — or to
 ## Scoring strokes
 
 | Stroke | Points |
-| --- | --- |
+| --- | ---: |
 | <span class="dot both"></span>Cannon — cue ball strikes both other balls | 2 |
 | <span class="dot red"></span>Pot the red | 3 |
 | <span class="dot wht"></span>Pot the opponent's cue ball | 2 |
