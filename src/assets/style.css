@@ -30,6 +30,9 @@
   --ball-blue:    #1F5FA8;
   --ball-pink:    #C9587C;
   --ball-black:   #1B1F19;
+  /* Deliberately the same in both themes: a numeral sitting on the black ball
+     is light regardless of the page around it. */
+  --ball-black-ink: #F4F4F0;
 
   --measure: 34rem;
   --serif: "Iowan Old Style", Charter, "Palatino Linotype", Palatino, Georgia, serif;
@@ -54,7 +57,7 @@
     --ball-brown:  #B08356;
     --ball-blue:   #6FA8E6;
     --ball-pink:   #E58BAC;
-    --ball-black:  #E7EAE0;
+    --ball-black:  #0B0E09;
   }
 }
 
@@ -75,7 +78,7 @@
   --ball-brown:  #B08356;
   --ball-blue:   #6FA8E6;
   --ball-pink:   #E58BAC;
-  --ball-black:  #E7EAE0;
+  --ball-black:  #0B0E09;
 }
 
 * { box-sizing: border-box; }
@@ -303,7 +306,9 @@ td[style*="right"] {
 .dot.brn { background: var(--ball-brown); }
 .dot.blu { background: var(--ball-blue); }
 .dot.pnk { background: var(--ball-pink); }
-.dot.blk { background: var(--ball-black); }
+/* The black keeps a ring so it stays legible against a dark page, rather
+   than being inverted to white — which contradicted the row labelled "Black". */
+.dot.blk { background: var(--ball-black); box-shadow: 0 0 0 1px var(--rule-strong); }
 .dot.wht { background: var(--ball-white); }
 .dot.both { background: linear-gradient(90deg, var(--ball-red) 50%, var(--ball-white) 50%); }
 
@@ -349,7 +354,7 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
    would paint over the band. */
 .diagram .ball-outline { fill: none; stroke: var(--rule-strong); stroke-width: 1.5; }
 .diagram .ball-solid  { fill: var(--cloth); }
-.diagram .ball-eight  { fill: var(--ink); }
+.diagram .ball-eight  { fill: var(--ball-black); }
 /* Snooker's colours. Declared after .ball so they win the fill on a
    `class="ball ball-blue"` — same specificity, later in the cascade. */
 .diagram .ball-yellow { fill: var(--ball-yellow); }
@@ -361,7 +366,7 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
 /* Packed reds are drawn small, where a stroke would swamp the fill. */
 .diagram .red-ball    { fill: var(--ball-red); stroke: none; }
 .diagram .ball-band   { fill: var(--cloth); }
-.diagram .ball-label  { fill: var(--surface); font-size: 17px; font-weight: 600; }
+.diagram .ball-label  { fill: var(--ball-black-ink); font-size: 17px; font-weight: 600; }
 /* Numbered balls carry a pale pip with the numeral on it, the way a real
    ball does — legible over a solid colour or a stripe alike. */
 .diagram .ball-pip    { fill: var(--surface); stroke: none; }
