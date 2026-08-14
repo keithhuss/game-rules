@@ -310,6 +310,7 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
 .diagram.compact { max-width: 18rem; margin-inline: auto; }
 .diagram.compact text { font-size: 11px; }
 .diagram.compact .ball-label { font-size: 12px; }
+.diagram.compact .ball-number { font-size: 12px; }
 
 /* Rack diagrams for the cue games. SVG fills, not CSS backgrounds, so they
    still print when a browser has "print backgrounds" switched off. */
@@ -322,6 +323,10 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
 .diagram .ball-eight  { fill: var(--ink); }
 .diagram .ball-band   { fill: var(--cloth); }
 .diagram .ball-label  { fill: var(--surface); font-size: 17px; font-weight: 600; }
+/* Numbered balls carry a pale pip with the numeral on it, the way a real
+   ball does — legible over a solid colour or a stripe alike. */
+.diagram .ball-pip    { fill: var(--surface); stroke: none; }
+.diagram .ball-number { fill: var(--ink); font-size: 13px; font-weight: 600; }
 .diagram .callout   { fill: none; stroke: var(--ink-faint); stroke-width: 1.2; stroke-dasharray: 4 3; }
 
 figcaption {
