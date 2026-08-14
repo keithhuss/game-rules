@@ -99,7 +99,7 @@ Fifteen reds, each answered by a black, plus the six colours cleared at the end,
 The striker plays the first stroke of the frame with the cue ball in hand, and a red is the ball on.
 
 - **Pot a red.** It scores 1 and stays off the table.
-- **Then a colour.** Nominate it if it is not obvious, pot it for its value, and it is **returned to its spot**.
+- **Then a colour.** Name the colour you intend — from that moment it alone is the ball on, and the other colours are not. Pot it for its value and it is **returned to its spot**.
 - **Then another red**, and so on. Reds and colours alternate for as long as reds remain.
 
 A visit ends when the striker fails to pot the ball on, or fouls. If a red is not potted, the next player's ball on is a red again.
@@ -116,8 +116,8 @@ From this point the colours are **not** respotted; each stays down once legally 
 
 A foul ends the visit. The penalty goes to the opponent as points — see rule 7.
 
-- Striking when a ball is not the ball on, or potting a ball that is not on.
-- Failing to hit any ball at all.
+- **Failing to strike a ball that is on first.** Missing every ball counts, and so does striking any other ball first. While reds are on, *any* red is a legal first contact; when a colour is on, only the nominated colour is — hitting a different colour first is a foul even if you pot it.
+- Potting a ball that is not on.
 - Potting the cue ball, or driving it off the table.
 - Forcing any ball off the table.
 - Striking the cue ball more than once, playing a push stroke, or playing a jump shot.
