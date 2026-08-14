@@ -36,13 +36,14 @@ glossary:
 - **The reds** are racked in a triangle **behind the pink**, in the space between the pink and the top cushion, with the apex red pointing back down the table and as close as possible to the pink without touching it. No red sits on a spot.
 
 <figure>
-<svg class="diagram" viewBox="-118 -34 730 350" role="img" aria-label="Diagram of a snooker table showing the baulk line and D, the spots for yellow, green, brown, blue, pink and black, and the triangle of fifteen reds behind the pink.">
+<svg class="diagram" viewBox="-126 -48 746 380" role="img" aria-label="Diagram of a snooker table showing the rail sights, the baulk line and D, the spots for yellow, green, brown, blue, pink and black, and the triangle of fifteen reds behind the pink.">
   <rect class="edge" x="0" y="0" width="560" height="280"/>
   <g class="pocket">
     <circle cx="0" cy="0" r="7"/><circle cx="560" cy="0" r="7"/>
     <circle cx="0" cy="280" r="7"/><circle cx="560" cy="280" r="7"/>
     <circle cx="280" cy="0" r="6"/><circle cx="280" cy="280" r="6"/>
   </g>
+  <path class="sight" d="M 70,-13 l 4,4 -4,4 -4,-4 z M 140,-13 l 4,4 -4,4 -4,-4 z M 210,-13 l 4,4 -4,4 -4,-4 z M 350,-13 l 4,4 -4,4 -4,-4 z M 420,-13 l 4,4 -4,4 -4,-4 z M 490,-13 l 4,4 -4,4 -4,-4 z M 70,285 l 4,4 -4,4 -4,-4 z M 140,285 l 4,4 -4,4 -4,-4 z M 210,285 l 4,4 -4,4 -4,-4 z M 350,285 l 4,4 -4,4 -4,-4 z M 420,285 l 4,4 -4,4 -4,-4 z M 490,285 l 4,4 -4,4 -4,-4 z M -9,66 l 4,4 -4,4 -4,-4 z M -9,136 l 4,4 -4,4 -4,-4 z M -9,206 l 4,4 -4,4 -4,-4 z M 569,66 l 4,4 -4,4 -4,-4 z M 569,136 l 4,4 -4,4 -4,-4 z M 569,206 l 4,4 -4,4 -4,-4 z"/>
 
   <line class="marking" x1="116" y1="0" x2="116" y2="280"/>
   <path class="marking" d="M 116 94 A 46 46 0 0 0 116 186"/>
@@ -64,13 +65,13 @@ glossary:
   <circle class="ball ball-pink"   cx="420" cy="140" r="7"/>
   <circle class="ball ball-black"  cx="509" cy="140" r="7"/>
 
-  <text x="-10" y="190" text-anchor="end">yellow</text>
-  <text x="-10" y="98"  text-anchor="end">green</text>
-  <text x="-10" y="144" text-anchor="end">brown</text>
-  <text x="280" y="-12">blue</text>
-  <text x="420" y="-12">pink</text>
-  <text x="509" y="-12">black</text>
-  <text x="116" y="303">baulk line</text>
+  <text x="-32" y="190" text-anchor="end">yellow</text>
+  <text x="-32" y="98"  text-anchor="end">green</text>
+  <text x="-32" y="144" text-anchor="end">brown</text>
+  <text x="280" y="-26">blue</text>
+  <text x="420" y="-26">pink</text>
+  <text x="509" y="-26">black</text>
+  <text x="116" y="317">baulk line</text>
 </svg>
 <figcaption>Yellow and green sit at the two corners of the D, brown at its centre. Blue takes the centre spot, pink the pyramid spot, black 12.75 in from the top cushion. The reds fill the space between the pink and the black.</figcaption>
 </figure>

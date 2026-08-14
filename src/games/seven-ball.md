@@ -70,8 +70,9 @@ Balls 1 to 6 may be pocketed in **any** pocket. Only the 7 is restricted.
 Immediately after the break, the **non-breaker elects the three pockets along one long rail**. The breaker is automatically assigned the three along the opposite rail.
 
 <figure>
-<svg class="diagram" viewBox="-30 -46 620 372" role="img" aria-label="Diagram of a pool table showing the six pockets divided into two sets of three, one along each long rail.">
+<svg class="diagram" viewBox="-32 -52 626 384" role="img" aria-label="Diagram of a pool table showing the rail sights and the six pockets divided into two sets of three, one along each long rail.">
   <rect class="edge" x="0" y="0" width="560" height="280"/>
+  <path class="sight" d="M 70,-13 l 4,4 -4,4 -4,-4 z M 140,-13 l 4,4 -4,4 -4,-4 z M 210,-13 l 4,4 -4,4 -4,-4 z M 350,-13 l 4,4 -4,4 -4,-4 z M 420,-13 l 4,4 -4,4 -4,-4 z M 490,-13 l 4,4 -4,4 -4,-4 z M 70,285 l 4,4 -4,4 -4,-4 z M 140,285 l 4,4 -4,4 -4,-4 z M 210,285 l 4,4 -4,4 -4,-4 z M 350,285 l 4,4 -4,4 -4,-4 z M 420,285 l 4,4 -4,4 -4,-4 z M 490,285 l 4,4 -4,4 -4,-4 z M -9,66 l 4,4 -4,4 -4,-4 z M -9,136 l 4,4 -4,4 -4,-4 z M -9,206 l 4,4 -4,4 -4,-4 z M 569,66 l 4,4 -4,4 -4,-4 z M 569,136 l 4,4 -4,4 -4,-4 z M 569,206 l 4,4 -4,4 -4,-4 z"/>
   <g class="pocket-a">
     <circle cx="0" cy="0" r="9"/><circle cx="280" cy="0" r="8"/><circle cx="560" cy="0" r="9"/>
   </g>
@@ -79,9 +80,9 @@ Immediately after the break, the **non-breaker elects the three pockets along on
     <circle cx="0" cy="280" r="9"/><circle cx="280" cy="280" r="8"/><circle cx="560" cy="280" r="9"/>
   </g>
   <line class="marking" x1="140" y1="0" x2="140" y2="280"/>
-  <text x="280" y="-22">one player's three pockets</text>
-  <text x="280" y="312">the other player's three</text>
-  <text x="140" y="-4" text-anchor="middle" style="font-size:12px">head string</text>
+  <text x="280" y="-30">one player's three pockets</text>
+  <text x="280" y="318">the other player's three</text>
+  <text x="154" y="21" text-anchor="start" style="font-size:12px">head string</text>
 </svg>
 <figcaption>Each long rail carries two corner pockets and one side pocket. The split is by rail, so every pocket belongs to exactly one player.</figcaption>
 </figure>

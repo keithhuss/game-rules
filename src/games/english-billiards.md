@@ -36,13 +36,14 @@ glossary:
 - **Spots.** Three are used: the *billiard spot*, 12.75 in from the top cushion (snooker's black spot); the *pyramid spot* (snooker's pink); and the *centre spot*.
 
 <figure>
-<svg class="diagram" viewBox="-30 -30 620 340" role="img" aria-label="Diagram of a billiards table showing the baulk line, the D, and the billiard, pyramid and centre spots.">
+<svg class="diagram" viewBox="-32 -48 626 376" role="img" aria-label="Diagram of a billiards table showing the rail sights, the baulk line, the D, and the billiard, pyramid and centre spots.">
   <rect class="edge" x="0" y="0" width="560" height="280"/>
   <g class="pocket">
     <circle cx="0" cy="0" r="7"/><circle cx="560" cy="0" r="7"/>
     <circle cx="0" cy="280" r="7"/><circle cx="560" cy="280" r="7"/>
     <circle cx="280" cy="0" r="6"/><circle cx="280" cy="280" r="6"/>
   </g>
+  <path class="sight" d="M 70,-13 l 4,4 -4,4 -4,-4 z M 140,-13 l 4,4 -4,4 -4,-4 z M 210,-13 l 4,4 -4,4 -4,-4 z M 350,-13 l 4,4 -4,4 -4,-4 z M 420,-13 l 4,4 -4,4 -4,-4 z M 490,-13 l 4,4 -4,4 -4,-4 z M 70,285 l 4,4 -4,4 -4,-4 z M 140,285 l 4,4 -4,4 -4,-4 z M 210,285 l 4,4 -4,4 -4,-4 z M 350,285 l 4,4 -4,4 -4,-4 z M 420,285 l 4,4 -4,4 -4,-4 z M 490,285 l 4,4 -4,4 -4,-4 z M -9,66 l 4,4 -4,4 -4,-4 z M -9,136 l 4,4 -4,4 -4,-4 z M -9,206 l 4,4 -4,4 -4,-4 z M 569,66 l 4,4 -4,4 -4,-4 z M 569,136 l 4,4 -4,4 -4,-4 z M 569,206 l 4,4 -4,4 -4,-4 z"/>
   <line class="marking" x1="116" y1="0" x2="116" y2="280"/>
   <path class="marking" d="M 116 94 A 46 46 0 0 0 116 186"/>
   <g class="spot">
@@ -51,10 +52,10 @@ glossary:
     <circle cx="509" cy="140" r="4"/>
   </g>
   <text x="58" y="146">D</text>
-  <text x="116" y="-11">baulk line</text>
-  <text x="280" y="-11">centre</text>
-  <text x="420" y="-11">pyramid</text>
-  <text x="509" y="-11">billiard</text>
+  <text x="116" y="-26">baulk line</text>
+  <text x="280" y="-26">centre</text>
+  <text x="420" y="-26">pyramid</text>
+  <text x="509" y="-26">billiard</text>
 </svg>
 <figcaption>Baulk lies to the left of the line. The red is spotted on the billiard spot to start.</figcaption>
 </figure>

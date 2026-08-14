@@ -327,6 +327,9 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
 
 .diagram .edge   { fill: none; stroke: var(--rule-strong); stroke-width: 2; }
 .diagram .pocket { fill: var(--rule-strong); }
+/* Rail sights — the "diamonds". Six along each long rail (the middle position
+   is the side pocket) and three along each short rail: eighteen in all. */
+.diagram .sight { fill: var(--ink-faint); stroke: none; }
 /* Seven-ball splits the six pockets into two sets of three, one per long rail. */
 .diagram .pocket-a { fill: var(--cloth); stroke: none; }
 .diagram .pocket-b { fill: var(--surface); stroke: var(--cloth); stroke-width: 2.5; }
