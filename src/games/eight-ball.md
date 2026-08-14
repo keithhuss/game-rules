@@ -129,9 +129,9 @@ Fouls do not carry a points penalty; the cost is ball in hand.
 
 A player loses immediately by:
 
-- Pocketing the 8-ball before clearing their own group.
-- Pocketing the 8-ball in a pocket other than the one called.
-- Driving the 8-ball off the table.
+- Pocketing the 8-ball before clearing their own group — **except on the break**, which is neither a win nor a loss. See rule 3.
+- Pocketing the 8-ball in a pocket other than the one called. No pocket is called on the break, so this too does not apply there.
+- Driving the 8-ball off the table, at any time — the break included.
 - Fouling on the same shot that pockets the 8-ball — including scratching.
 
 > Note the asymmetry: fouling while pocketing the 8 loses the game, but fouling at any other time merely hands over ball in hand. The last shot is the one to play carefully.
