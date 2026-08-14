@@ -32,7 +32,8 @@ glossary:
 - **Table.** 12ft × 6ft with six pockets, the same table as English billiards.
 - **Balls.** Twenty-two, each 52.5 mm: a white cue ball, fifteen reds, and six colours — yellow, green, brown, blue, pink and black.
 - **The baulk line and D.** The baulk line is drawn 29 in from the bottom cushion; the D is a semicircle of 11.5 in radius drawn into baulk from its centre. The cue ball is played from the D whenever it is in hand.
-- **The spots.** Each colour has its own spot, shown below. The reds are racked in a triangle with the apex red as close as possible to the pink without touching it.
+- **The spots.** Each colour has its own spot, shown below. Every colour starts on its own spot — including the pink, which sits on the pyramid spot.
+- **The reds** are racked in a triangle **behind the pink**, in the space between the pink and the top cushion, with the apex red pointing back down the table and as close as possible to the pink without touching it. No red sits on a spot.
 
 <figure>
 <svg class="diagram" viewBox="-118 -34 730 350" role="img" aria-label="Diagram of a snooker table showing the baulk line and D, the spots for yellow, green, brown, blue, pink and black, and the triangle of fifteen reds behind the pink.">
@@ -71,7 +72,7 @@ glossary:
   <text x="509" y="-12">black</text>
   <text x="116" y="303">baulk line</text>
 </svg>
-<figcaption>Yellow and green sit at the two corners of the D, brown at its centre. Blue takes the centre spot, pink the pyramid spot, black 12.75 in from the top cushion.</figcaption>
+<figcaption>Yellow and green sit at the two corners of the D, brown at its centre. Blue takes the centre spot, pink the pyramid spot, black 12.75 in from the top cushion. The reds fill the space between the pink and the black.</figcaption>
 </figure>
 
 ## Object of the game
