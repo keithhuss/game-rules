@@ -171,5 +171,4 @@ Widely played, none of them WPBSA frame rules. Agree the format before you start
 | Six-red snooker | Six reds instead of fifteen. Much shorter frames; everything else is unchanged. |
 | Ten-red / snooker plus | Intermediate red counts, common on smaller tables. |
 | No miss rule | Fouls are still fouls, but the shot is never replayed. Usual in casual play. |
-| Concede at a frame ball | The trailing player concedes once the deficit exceeds the points left on the table. |
 | Free ball ignored | Casual games often skip the free ball and simply hand over the penalty. |

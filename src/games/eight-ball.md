@@ -150,7 +150,7 @@ None of these are WPA rules, but all are widespread. Agree which apply before yo
 | --- | --- |
 | Last pocket | The 8 must be pocketed in the same pocket as your final group ball. |
 | Slop counts | Shots need not be called; anything pocketed stays down and the turn continues. |
-| Scratch on the 8 loses | A scratch while pocketing the 8 loses even if the 8 was legally made. |
+| Any scratch on the 8 loses | Under WPA a scratch only loses the game if it happens on the stroke that pockets the 8 (rule 8). Some houses make *any* scratch while the 8 is your object ball an immediate loss, rather than a foul giving ball in hand. |
 | Kitchen only | Ball in hand is restricted to behind the head string rather than anywhere. |
 | 8 on the break wins | Pocketing the 8 on the break wins outright, rather than being re-racked. |
 | Must hit a rail | A rail contact is required after every shot, not only when nothing is pocketed. |
