@@ -64,15 +64,12 @@ When **fourteen** balls have been pocketed, play pauses. Those fourteen are rack
 <figure>
 <svg class="diagram compact" viewBox="-105 -118 210 283" role="img" aria-label="Diagram of a straight pool re-rack: fourteen balls racked in a triangle with the apex position empty, the fifteenth break ball and the cue ball left in front of it.">
   <circle class="callout" cx="0" cy="0" r="17"/>
-
   <circle class="ball" cx="-18" cy="31" r="17"/><circle class="ball" cx="18" cy="31" r="17"/>
   <circle class="ball" cx="-36" cy="62" r="17"/><circle class="ball" cx="0" cy="62" r="17"/><circle class="ball" cx="36" cy="62" r="17"/>
   <circle class="ball" cx="-54" cy="93" r="17"/><circle class="ball" cx="-18" cy="93" r="17"/><circle class="ball" cx="18" cy="93" r="17"/><circle class="ball" cx="54" cy="93" r="17"/>
   <circle class="ball" cx="-72" cy="124" r="17"/><circle class="ball" cx="-36" cy="124" r="17"/><circle class="ball" cx="0" cy="124" r="17"/><circle class="ball" cx="36" cy="124" r="17"/><circle class="ball" cx="72" cy="124" r="17"/>
-
   <circle class="ball ball-solid" cx="68" cy="-52" r="17"/>
   <circle class="ball" cx="-62" cy="-72" r="17"/>
-
   <text x="0" y="-30" text-anchor="middle">apex left empty</text>
   <text x="68" y="-78" text-anchor="middle">break ball</text>
   <text x="-62" y="-98" text-anchor="middle">cue ball</text>

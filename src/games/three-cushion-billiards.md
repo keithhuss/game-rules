@@ -36,13 +36,10 @@ glossary:
 <svg class="diagram" viewBox="-32 -48 626 376" role="img" aria-label="Diagram of a pocketless carom billiards table showing twenty rail sights, the centre spot, and the opening position of the three balls: red on the foot spot, the opponent's white on the head spot, and the striker's yellow beside it.">
   <rect class="edge" x="0" y="0" width="560" height="280"/>
   <path class="sight" d="M 70,-13 l 4,4 -4,4 -4,-4 z M 140,-13 l 4,4 -4,4 -4,-4 z M 210,-13 l 4,4 -4,4 -4,-4 z M 280,-13 l 4,4 -4,4 -4,-4 z M 350,-13 l 4,4 -4,4 -4,-4 z M 420,-13 l 4,4 -4,4 -4,-4 z M 490,-13 l 4,4 -4,4 -4,-4 z M 70,285 l 4,4 -4,4 -4,-4 z M 140,285 l 4,4 -4,4 -4,-4 z M 210,285 l 4,4 -4,4 -4,-4 z M 280,285 l 4,4 -4,4 -4,-4 z M 350,285 l 4,4 -4,4 -4,-4 z M 420,285 l 4,4 -4,4 -4,-4 z M 490,285 l 4,4 -4,4 -4,-4 z M -9,66 l 4,4 -4,4 -4,-4 z M -9,136 l 4,4 -4,4 -4,-4 z M -9,206 l 4,4 -4,4 -4,-4 z M 569,66 l 4,4 -4,4 -4,-4 z M 569,136 l 4,4 -4,4 -4,-4 z M 569,206 l 4,4 -4,4 -4,-4 z"/>
-
   <circle class="spot" cx="280" cy="140" r="3"/>
-
   <circle class="ball ball-red" cx="420" cy="140" r="6"/>
   <circle class="ball" cx="140" cy="140" r="6"/>
   <circle class="ball ball-yellow" cx="140" cy="176" r="6"/>
-
   <text x="140" y="-26">head spot</text>
   <text x="280" y="-26">centre spot</text>
   <text x="420" y="-26">foot spot</text>

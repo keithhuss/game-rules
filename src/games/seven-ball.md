@@ -35,16 +35,13 @@ glossary:
   <circle class="ball ball-solid" cx="0" cy="-34" r="17"/>
   <circle class="ball-pip" cx="0" cy="-34" r="9"/>
   <text class="ball-number" x="0" y="-30" text-anchor="middle">1</text>
-
   <circle class="ball" cx="29" cy="-17" r="17"/>
   <circle class="ball" cx="29" cy="17" r="17"/>
   <circle class="ball" cx="0" cy="34" r="17"/>
   <circle class="ball" cx="-29" cy="17" r="17"/>
   <circle class="ball" cx="-29" cy="-17" r="17"/>
-
   <circle class="ball ball-eight" cx="0" cy="0" r="17"/>
   <text class="ball-label" x="0" y="5" text-anchor="middle">7</text>
-
   <text x="0" y="-62" text-anchor="middle">1-ball on the foot spot</text>
   <text x="0" y="70" text-anchor="middle">7 in the centre</text>
 </svg>

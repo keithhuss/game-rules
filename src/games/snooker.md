@@ -44,10 +44,8 @@ glossary:
     <circle cx="280" cy="0" r="6"/><circle cx="280" cy="280" r="6"/>
   </g>
   <path class="sight" d="M 70,-13 l 4,4 -4,4 -4,-4 z M 140,-13 l 4,4 -4,4 -4,-4 z M 210,-13 l 4,4 -4,4 -4,-4 z M 350,-13 l 4,4 -4,4 -4,-4 z M 420,-13 l 4,4 -4,4 -4,-4 z M 490,-13 l 4,4 -4,4 -4,-4 z M 70,285 l 4,4 -4,4 -4,-4 z M 140,285 l 4,4 -4,4 -4,-4 z M 210,285 l 4,4 -4,4 -4,-4 z M 350,285 l 4,4 -4,4 -4,-4 z M 420,285 l 4,4 -4,4 -4,-4 z M 490,285 l 4,4 -4,4 -4,-4 z M -9,66 l 4,4 -4,4 -4,-4 z M -9,136 l 4,4 -4,4 -4,-4 z M -9,206 l 4,4 -4,4 -4,-4 z M 569,66 l 4,4 -4,4 -4,-4 z M 569,136 l 4,4 -4,4 -4,-4 z M 569,206 l 4,4 -4,4 -4,-4 z"/>
-
   <line class="marking" x1="116" y1="0" x2="116" y2="280"/>
   <path class="marking" d="M 116 94 A 46 46 0 0 0 116 186"/>
-
   <!-- the fifteen reds, apex just behind the pink -->
   <g class="red-ball">
     <circle cx="430" cy="140" r="4"/>
@@ -56,7 +54,6 @@ glossary:
     <circle cx="451" cy="128" r="4"/><circle cx="451" cy="136" r="4"/><circle cx="451" cy="144" r="4"/><circle cx="451" cy="152" r="4"/>
     <circle cx="458" cy="124" r="4"/><circle cx="458" cy="132" r="4"/><circle cx="458" cy="140" r="4"/><circle cx="458" cy="148" r="4"/><circle cx="458" cy="156" r="4"/>
   </g>
-
   <!-- the six colours on their spots -->
   <circle class="ball ball-yellow" cx="116" cy="186" r="7"/>
   <circle class="ball ball-green"  cx="116" cy="94"  r="7"/>
@@ -64,7 +61,6 @@ glossary:
   <circle class="ball ball-blue"   cx="280" cy="140" r="7"/>
   <circle class="ball ball-pink"   cx="420" cy="140" r="7"/>
   <circle class="ball ball-black"  cx="509" cy="140" r="7"/>
-
   <text x="-32" y="190" text-anchor="end">yellow</text>
   <text x="-32" y="98"  text-anchor="end">green</text>
   <text x="-32" y="144" text-anchor="end">brown</text>

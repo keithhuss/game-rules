@@ -38,6 +38,11 @@ jobs:
       - name: Build site
         run: npm run build
 
+      # Catches inline SVGs broken by Markdown's HTML-block rules, which the
+      # build itself reports as a success.
+      - name: Check built output
+        run: npm run check
+
       # ubuntu-latest ships with Chrome preinstalled, so the PDFs are rendered
       # by the same engine (and the same print CSS) as a local build.
       - name: Render PDFs

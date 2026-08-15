@@ -39,16 +39,13 @@ glossary:
   <defs>
     <clipPath id="nine-clip"><circle cx="0" cy="62" r="17"/></clipPath>
   </defs>
-
   <!-- apex: the 1-ball -->
   <circle class="ball ball-solid" cx="0" cy="0" r="17"/>
   <circle class="ball-pip" cx="0" cy="0" r="9"/>
   <text class="ball-number" x="0" y="4" text-anchor="middle">1</text>
-
   <!-- row 2 -->
   <circle class="ball" cx="-18" cy="31" r="17"/>
   <circle class="ball" cx="18" cy="31" r="17"/>
-
   <!-- row 3: the 9-ball sits in the centre -->
   <circle class="ball" cx="-36" cy="62" r="17"/>
   <circle class="ball" cx="36" cy="62" r="17"/>
@@ -57,14 +54,11 @@ glossary:
   <circle class="ball-outline" cx="0" cy="62" r="17"/>
   <circle class="ball-pip" cx="0" cy="62" r="9"/>
   <text class="ball-number" x="0" y="66" text-anchor="middle">9</text>
-
   <!-- row 4 -->
   <circle class="ball" cx="-18" cy="93" r="17"/>
   <circle class="ball" cx="18" cy="93" r="17"/>
-
   <!-- row 5 -->
   <circle class="ball" cx="0" cy="124" r="17"/>
-
   <text x="0" y="-26" text-anchor="middle">1-ball on the foot spot</text>
   <text x="0" y="156" text-anchor="middle">9 in the centre, rest at random</text>
 </svg>
