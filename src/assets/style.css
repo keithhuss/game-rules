@@ -360,6 +360,7 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
 .diagram .ball-eight  { fill: var(--ball-black); }
 /* Snooker's colours. Declared after .ball so they win the fill on a
    `class="ball ball-blue"` — same specificity, later in the cascade. */
+.diagram .ball-red    { fill: var(--ball-red); }
 .diagram .ball-yellow { fill: var(--ball-yellow); }
 .diagram .ball-green  { fill: var(--ball-green); }
 .diagram .ball-brown  { fill: var(--ball-brown); }
