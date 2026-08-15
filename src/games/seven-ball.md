@@ -99,7 +99,7 @@ On the shot immediately after the break — and only then, once per game — the
 
 ## Rules of play
 
-- On every shot, the cue ball must strike the **lowest-numbered ball** on the table first.
+- On every shot, the **first ball the cue ball contacts** must be the **lowest-numbered ball** on the table. Cushions before that contact are fine — a kick off one or more rails is legal.
 - After that contact, any ball that drops counts and stays down.
 - **Not a call-shot game.** Combinations, kisses and accidental pots all count.
 - A player who legally pockets any ball continues at the table.

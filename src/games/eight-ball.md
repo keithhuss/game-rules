@@ -105,7 +105,9 @@ Every shot but the break must be called — both the **ball** and the **pocket**
 
 ## Legal shots and safeties
 
-On every shot the cue ball must first strike a ball of the shooter's group. While the table is open that means any ball except the 8; once a player has cleared their group, the 8 becomes their object ball and must be struck first. Then either a ball must be pocketed, or **any** ball must reach a rail. Failing that, it is a foul.
+On every shot the **first ball the cue ball contacts** must be one of the shooter's group. Cushions struck on the way there do not matter — reaching your ball off one or more rails is entirely legal. While the table is open that means any ball except the 8; once a player has cleared their group, the 8 becomes their object ball and must be contacted first.
+
+Then either a ball must be pocketed, or **any** ball must reach a rail. Failing that, it is a foul.
 
 A player who legally pockets a called ball continues at the table.
 

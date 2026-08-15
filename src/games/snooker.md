@@ -118,7 +118,7 @@ From this point the colours are **not** respotted; each stays down once legally 
 
 A foul ends the visit. The penalty goes to the opponent as points — see rule 7.
 
-- **Failing to strike a ball that is on first.** Missing every ball counts, and so does striking any other ball first. While reds are on, *any* red is a legal first contact; when a colour is on, only the nominated colour is — hitting a different colour first is a foul even if you pot it.
+- **Failing to strike a ball that is on first.** Missing every ball counts, and so does striking any other ball first. It is the first *ball* contacted that matters — cushions struck on the way are irrelevant, so a kick out of a snooker is legal. While reds are on, *any* red is a legal first contact; when a colour is on, only the nominated colour is — hitting a different colour first is a foul even if you pot it.
 - Potting a ball that is not on.
 - Potting the cue ball, or driving it off the table.
 - Forcing any ball off the table.

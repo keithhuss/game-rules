@@ -99,7 +99,7 @@ A push out is the standard answer to a break that leaves no shot on the lowest b
 
 ## Rules of play
 
-- On every shot, the cue ball must strike the **lowest-numbered ball on the table** first.
+- On every shot, the **first ball the cue ball contacts** must be the **lowest-numbered ball on the table**. Cushions before that contact are fine — a kick off one or more rails into the lowest ball is legal.
 - After that first contact, **any** ball that drops counts and stays down — including the 9.
 - **Nine-ball is not a call-shot game.** Balls pocketed by accident, by kiss or by combination all count exactly as intended ones do.
 - A player who legally pockets any ball continues at the table.

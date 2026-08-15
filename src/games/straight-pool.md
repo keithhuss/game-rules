@@ -86,7 +86,9 @@ If the **break ball or the cue ball lies inside the rack area**, it cannot simpl
 
 ## Legal shots and safeties
 
-On every shot the cue ball must first strike an object ball. Then either a ball must be pocketed, or **any** ball must reach a rail. Failing that, it is a foul.
+On every shot the cue ball must **contact an object ball**. Every ball is on in straight pool, so any of them will do — and the cue ball may reach it off one or more cushions on the way. A kick shot into your object ball is entirely legal.
+
+After that contact, either a ball must be pocketed, or **any** ball — the cue ball included — must reach a rail. Failing that, it is a foul.
 
 A player may play a **safety** deliberately, announcing it beforehand. The shot must still be legal, and the turn then ends. Any ball pocketed on a called safety is spotted and does not score.
 
@@ -94,7 +96,7 @@ A player may play a **safety** deliberately, announcing it beforehand. The shot 
 
 A standard foul costs **one point** and ends the turn.
 
-- Failing to strike an object ball first.
+- Failing to contact any object ball.
 - No ball pocketed and no ball driven to a rail.
 - Scratching, or driving the cue ball off the table — after which the cue ball is **in hand behind the head string**.
 - Driving any ball off the table.
