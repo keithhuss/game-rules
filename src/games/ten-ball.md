@@ -113,7 +113,7 @@ A foul ends the turn and gives the incoming player **ball in hand** — the cue 
 
 ## Three consecutive fouls
 
-Three fouls in a row by the same player, without a legal shot in between, is **loss of the rack**. The player must be warned that they are on two fouls before the third shot.
+Three fouls in a row by the same player, without a legal shot in between, is **loss of the rack** — a rack being a single game, so this loses the game outright, exactly as in nine-ball. The player must be warned that they are on two fouls before the third shot.
 
 ## Spotting the 10
 
@@ -136,6 +136,8 @@ The two games share a skeleton. These are the differences that matter at the tab
 | Calling shots | Every shot | None — slop counts |
 | Money ball on the break | Spotted, play continues | Wins the rack |
 | Ball pocketed uncalled | Stays down, inning ends, opponent may pass it back | Counts, and you continue |
-| Three consecutive fouls | Loss of rack | Loss of game |
+| Three consecutive fouls | Loses the game | Loses the game |
 | Push out | Yes | Yes |
 | Foul penalty | Ball in hand anywhere | Ball in hand anywhere |
+
+The last three rows are the same in both games, and are listed so you can see what *isn't* different. Rule books say "loss of rack" for one and "loss of game" for the other, but a rack is a game — the wording differs, the penalty does not.
