@@ -92,7 +92,7 @@ A foul ends the inning. **No point is deducted, and the opponent gains nothing**
 
 ## Balls off the table, and frozen balls
 
-- **A ball leaving the table** is a foul and the inning ends. The balls are then replaced on their spots.
+- **A ball leaving the table** is a foul and the inning ends. The balls are then replaced on their own spots: the **red on the foot spot**, the **striker's cue ball on the head spot**, and the **opponent's cue ball on the centre spot**. If the spot a ball needs is hidden by another ball, it takes instead the spot that the blocking ball would normally occupy.
 - **A cue ball frozen to a cushion** may not be played into that cushion. Doing so is a foul. Play it away from the cushion instead, or have it respotted where the rules allow.
 
 ## Ending the game

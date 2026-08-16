@@ -60,7 +60,7 @@ Balls 1 to 6 may be pocketed in **any** pocket. Only the 7 is restricted.
 - **A legal break** must strike the 1-ball first, and then either pocket a ball or drive at least four object balls to a rail.
 - Balls pocketed on a legal break stay down and the breaker continues.
 - **Pocketing the 7 on a legal break wins the game.**
-- If the 7 drops on a break where a foul also occurred, the 7 is spotted and the incoming player takes ball in hand.
+- If the 7 drops on a break where a foul also occurred, the 7 is spotted and the incoming player takes ball in hand. A spotted ball goes on the **foot spot** — where the 1-ball was racked — or, if that is occupied, as near below it as possible on the long string towards the foot rail.
 
 ## Choosing sides
 

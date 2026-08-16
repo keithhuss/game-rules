@@ -84,6 +84,8 @@ You may pocket a ball from **your own group**, and it counts as a legal shot —
 ## Fouls and scratches
 
 - **A scratch** — pocketing the cue ball or driving it off the table — is the serious one. **Every opponent spots one of their pocketed balls back onto the table.** Your turn ends and the next player plays from behind the head string.
+
+  Spotted balls go on the **foot spot** — where the 1-ball was racked. With two or three coming back at once, they queue below it on the long string towards the foot rail, frozen together.
 - **Any other foul** simply ends your turn. The next player takes the cue ball where it lies, with no ball in hand.
 
 The scratch penalty is what keeps cutthroat from being decided early. A player who is one ball from elimination is rescued by any careless scratch, from anybody.

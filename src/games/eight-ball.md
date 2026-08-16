@@ -83,7 +83,7 @@ Groups are not decided by the rack or the break — see rule 4.
 - **A legal break** must either pocket a ball, or drive at least four object balls to a rail. Anything less is a foul: the incoming player may accept the table as it lies, or re-rack and break themselves.
 - **Balls pocketed on the break stay down**, and the breaker continues — but the table is still open.
 - **Scratching on the break** is a foul. The incoming player takes the cue ball in hand behind the head string, and any balls pocketed stay down.
-- **Pocketing the 8 on the break** is neither a win nor a loss. The breaker may either re-rack and break again, or have the 8 spotted and carry on.
+- **Pocketing the 8 on the break** is neither a win nor a loss. The breaker may either re-rack and break again, or have the 8 spotted and carry on. A spotted ball goes on the **foot spot** — where the apex ball was racked — or, if that is occupied, as near below it as possible on the long string towards the foot rail.
 - Driving an object ball off the table on the break is a foul, and the ball is not returned to the table.
 
 ## The open table and choosing groups
