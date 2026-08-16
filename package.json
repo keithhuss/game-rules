@@ -10,6 +10,7 @@
     "pdfs": "node scripts/build-pdfs.mjs",
     "check": "node scripts/check-build.mjs",
     "shot": "node scripts/shoot.mjs",
+    "export:ios": "node scripts/export-ios.mjs",
     "all": "npm run build && npm run check && npm run pdfs"
   },
   "devDependencies": {

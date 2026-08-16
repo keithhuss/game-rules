@@ -48,6 +48,19 @@ jobs:
       - name: Render PDFs
         run: npm run pdfs
 
+      # manifest.json + content.zip live at the site root so the GameRules
+      # iOS app can fetch them for over-the-air rules updates.
+      - name: Write manifest.json and content.zip
+        run: |
+          node -e "
+            const fs = require('fs');
+            fs.writeFileSync('_site/manifest.json', JSON.stringify({
+              version: process.env.GITHUB_SHA,
+              date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+            }));
+          "
+          cd _site && zip -r -X ../content.zip . && mv ../content.zip content.zip
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
