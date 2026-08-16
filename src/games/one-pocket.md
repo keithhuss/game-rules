@@ -21,7 +21,9 @@ glossary:
   - term: Inning
     definition: A player's turn at the table.
   - term: Spot
-    definition: To return a ball to the foot spot, or as near to it as the balls allow.
+    definition: To return a ball to the foot spot, or to the nearest free space on the long string below it.
+  - term: Long string
+    definition: The line running from the foot spot to the middle of the foot rail, along which balls are spotted when the foot spot is taken.
   - term: Bank
     definition: A shot played off one or more cushions, the staple of the game since your pocket is rarely in line.
 ---
@@ -85,7 +87,7 @@ A good break in one-pocket does not try to score. It nudges a ball or two toward
 | --- | --- |
 | Your own pocket | Scores one for you |
 | Your opponent's pocket | **Scores one for them**, even though you shot it |
-| Any of the four neutral pockets | Spotted, scores nothing |
+| Any of the four neutral pockets | Spotted, scores nothing — see rule 7 |
 | Off the table | Foul, and the ball is spotted |
 
 > This is the rule that makes one-pocket what it is. You can win a game on a ball your opponent shot, and you can hand them the match with a stray bank. No other pool game lets your opponent score for you.
@@ -96,7 +98,7 @@ If the cue ball scratches or jumps the table on a stroke that also pockets a bal
 
 ## Fouls and the one-ball penalty
 
-Every foul ends the inning and costs **one ball**: one of the offender's already-scored balls is taken off their tally and spotted.
+Every foul ends the inning and costs **one ball**: one of the offender's already-scored balls is taken off their tally and spotted on the foot spot, as described in rule 7.
 
 - Failing to meet the break requirements above.
 - Failing to drive any ball to a rail after contact, when nothing is pocketed.
@@ -118,6 +120,18 @@ That second case is why one-pocket safety play is so punishing: most fouls leave
 A player who fouls with **no scored balls to give back** cannot pay the penalty. They **owe** a ball instead, and a marker is set aside to record it.
 
 The debt is repaid out of the next balls they score, at the end of the first inning in which they score, before those balls count towards their eight.
+
+## Spotting
+
+Everything that is spotted goes to the **foot spot** — the spot the apex ball was racked on, not the centre of the table.
+
+- If the foot spot is taken, the ball goes to the nearest free space **on the long string directly below it**, towards the foot rail.
+- If that line fills all the way to the rail, spotting continues **above** the foot spot along the same line.
+- A spotted ball is placed **frozen tight** against any object ball already on that line, without disturbing it. If the **cue ball** is what blocks the line, the spotted ball goes close to it but **not** frozen.
+
+Spotting is done at the **end of the offending player's inning**, not the instant a ball is owed — so several balls may go back up at once.
+
+> If the table is cleared and nobody has reached eight, every pocketed ball is spotted and play simply continues. The game cannot end in an empty table.
 
 ## Three consecutive fouls
 
