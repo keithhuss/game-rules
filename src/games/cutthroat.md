@@ -85,7 +85,7 @@ You may pocket a ball from **your own group**, and it counts as a legal shot —
 
 - **A scratch** — pocketing the cue ball or driving it off the table — is the serious one. **Every opponent spots one of their pocketed balls back onto the table.** Your turn ends and the next player plays from behind the head string.
 
-  Spotted balls go on the **foot spot** — where the 1-ball was racked. With two or three coming back at once, they queue below it on the long string towards the foot rail, frozen together.
+  Spotted balls go on the **foot spot** — where the 1-ball was racked. When more than one comes back at once, the general pool rule puts them on the long string in **ascending numerical order**, lowest nearest the foot spot and the rest queued behind it towards the foot rail. In cutthroat that means **low, then mid, then high**. If the space behind the foot spot is blocked, they go in front of it instead, towards the centre spot, in the same order.
 - **Any other foul** simply ends your turn. The next player takes the cue ball where it lies, with no ball in hand.
 
 The scratch penalty is what keeps cutthroat from being decided early. A player who is one ball from elimination is rescued by any careless scratch, from anybody.
@@ -112,3 +112,4 @@ Cutthroat is a casual game with no governing body, and almost every table plays 
 | Ball in hand | Behind the head string after a scratch is usual; some play ball in hand anywhere. |
 | Five players | Groups of three: 1–3, 4–6, 7–9, 10–12, 13–15. Four or six players divide similarly. |
 | Break requirements | Rarely specified. Most tables ask only that the rack be struck and some ball reach a rail. |
+| Spotting order | No cutthroat rule set specifies it. Rule 6 follows the general pool rule of ascending numerical order; some tables just let each player place their own returning ball. |

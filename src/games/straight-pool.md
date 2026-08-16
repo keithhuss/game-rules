@@ -103,7 +103,7 @@ A standard foul costs **one point** and ends the turn.
 
 Balls pocketed on a foul are spotted and score nothing.
 
-Everything spotted in straight pool goes on the **foot spot** — where the apex ball was racked. If it is occupied, the ball goes as near below it as possible on the long string, towards the foot rail. The one exception is the re-rack in rule 5, where an interfering break ball or cue ball goes to the head or centre spot instead.
+Everything spotted in straight pool goes on the **foot spot** — where the apex ball was racked. If it is occupied, the ball goes as near below it as possible on the long string, towards the foot rail. Where several balls are spotted at once they go in **ascending numerical order**, lowest nearest the foot spot; if the space behind is blocked they are placed in front of the foot spot instead, towards the centre spot, in the same order. The one exception is the re-rack in rule 5, where an interfering break ball or cue ball goes to the head or centre spot.
 
 ## Three consecutive fouls
 
