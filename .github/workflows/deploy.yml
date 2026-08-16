@@ -18,13 +18,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Job-level so the build and the PDF renderer agree on the prefix. If only
-    # the build sees it, the PDF server 404s every asset and silently renders
-    # unstyled pages.
-    env:
-      # Project pages are served from /<repo>/. Set this to "/" when a custom
-      # domain is pointed at the site.
-      PATH_PREFIX: /game-rules/
     steps:
       - uses: actions/checkout@v4
 
@@ -35,8 +28,46 @@ jobs:
 
       - run: npm ci
 
+      - name: Compute manifest.json
+        run: |
+          node -e "
+            const fs = require('fs');
+            fs.writeFileSync('manifest.json', JSON.stringify({
+              version: process.env.GITHUB_SHA,
+              date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+            }));
+          "
+
+      # --- Unprefixed pass: produces content.zip, the OTA payload for the
+      # GameRules iOS app. Must match scripts/export-ios.mjs's build exactly —
+      # the app's WKURLSchemeHandler resolves absolute asset paths with no
+      # prefix-stripping, so a content.zip built from the /game-rules/
+      # -prefixed site 404s every asset and every in-page link once
+      # downloaded (confirmed 2026-08-16: OTA swap produced an unstyled,
+      # non-navigable home page).
+      - name: Build unprefixed site (for content.zip)
+        run: npm run build
+        env:
+          PATH_PREFIX: /
+
+      - name: Check unprefixed build
+        run: npm run check
+
+      - name: Render PDFs (unprefixed)
+        run: npm run pdfs
+        env:
+          PATH_PREFIX: /
+
+      - name: Package content.zip
+        run: |
+          cp manifest.json _site/manifest.json
+          cd _site && zip -r -X ../content.zip . && cd ..
+
+      # --- Prefixed pass: the actual site GitHub Pages serves ---
       - name: Build site
         run: npm run build
+        env:
+          PATH_PREFIX: /game-rules/
 
       # Catches inline SVGs broken by Markdown's HTML-block rules, which the
       # build itself reports as a success.
@@ -47,19 +78,15 @@ jobs:
       # by the same engine (and the same print CSS) as a local build.
       - name: Render PDFs
         run: npm run pdfs
+        env:
+          PATH_PREFIX: /game-rules/
 
-      # manifest.json + content.zip live at the site root so the GameRules
-      # iOS app can fetch them for over-the-air rules updates.
-      - name: Write manifest.json and content.zip
+      # manifest.json + content.zip ship alongside the prefixed site so the
+      # GameRules iOS app can fetch them at the site root.
+      - name: Add manifest.json and content.zip to the site
         run: |
-          node -e "
-            const fs = require('fs');
-            fs.writeFileSync('_site/manifest.json', JSON.stringify({
-              version: process.env.GITHUB_SHA,
-              date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
-            }));
-          "
-          cd _site && zip -r -X ../content.zip . && mv ../content.zip content.zip
+          cp manifest.json _site/manifest.json
+          cp content.zip _site/content.zip
 
       - uses: actions/configure-pages@v5
 
