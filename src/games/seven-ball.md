@@ -79,7 +79,7 @@ Immediately after the break, the **non-breaker elects the three pockets along on
   <line class="marking" x1="140" y1="0" x2="140" y2="280"/>
   <text x="280" y="-30">one player's three pockets</text>
   <text x="280" y="318">the other player's three</text>
-  <text x="154" y="21" text-anchor="start" style="font-size:12px">head string</text>
+  <text class="at-start" x="154" y="21" style="font-size:12px">head string</text>
 </svg>
 <figcaption>Each long rail carries two corner pockets and one side pocket. The split is by rail, so every pocket belongs to exactly one player.</figcaption>
 </figure>

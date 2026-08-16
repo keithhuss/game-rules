@@ -342,6 +342,12 @@ figure { margin: 1.25rem 0 0; max-width: var(--measure); }
   text-anchor: middle;
 }
 
+/* Use these classes, not a text-anchor="..." attribute: the rule above is CSS
+   and beats any presentation attribute, so an inline anchor is silently
+   ignored and the label renders centred. */
+.diagram text.at-start { text-anchor: start; }
+.diagram text.at-end   { text-anchor: end; }
+
 /* Portrait-ish diagrams (racks, boards) shouldn't stretch to the full measure —
    at full width their labels scale up with the drawing and shout. */
 .diagram.compact { max-width: 18rem; margin-inline: auto; }

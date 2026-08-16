@@ -61,9 +61,9 @@ glossary:
   <circle class="ball ball-blue"   cx="280" cy="140" r="7"/>
   <circle class="ball ball-pink"   cx="420" cy="140" r="7"/>
   <circle class="ball ball-black"  cx="509" cy="140" r="7"/>
-  <text x="-32" y="190" text-anchor="end">yellow</text>
-  <text x="-32" y="98"  text-anchor="end">green</text>
-  <text x="-32" y="144" text-anchor="end">brown</text>
+  <text class="at-end" x="-32" y="190" >yellow</text>
+  <text class="at-end" x="-32" y="98"  >green</text>
+  <text class="at-end" x="-32" y="144" >brown</text>
   <text x="280" y="-26">blue</text>
   <text x="420" y="-26">pink</text>
   <text x="509" y="-26">black</text>
