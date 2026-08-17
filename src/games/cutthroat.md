@@ -63,8 +63,8 @@ Note what this is not: you never try to clear your own group. Your five balls ar
 
 The sets start **open** — nobody owns anything until balls start dropping.
 
-- The groups settle once balls from **two** of the three sets have been pocketed. Whoever has been eating into the other two sets is, by elimination, left with the third.
-- Many tables instead play that the **first player to legally pocket a ball claims whichever set they like** — usually the one they've just damaged least.
+- The groups settle once a player has personally pocketed from **each of the other two sets** — the one set they haven't touched is, by elimination, their own. Sinking balls from only one other set doesn't settle anything yet: pot nothing but 6s and 9s and you've ruled out mid, but low and high both remain open until you touch one of those too.
+- Many tables instead play that group ownership follows **who pots first**: the first player to legally pocket a ball claims whichever set they like — usually the one they've just damaged least — the next player to pocket a ball picks from what's left, and the third is stuck with whatever remains.
 
 Agree which of those you're using before the break. It changes the whole opening.
 
@@ -106,7 +106,7 @@ Cutthroat is a casual game with no governing body, and almost every table plays 
 
 | Point | The variation |
 | --- | --- |
-| Claiming groups | Sets settle once two have been broken into, or the first player to pocket claims a set outright. |
+| Claiming groups | Sets settle once a player has potted from both other sets, or claiming follows pot order: first picks any set, second picks from what's left, third gets the remainder. |
 | Call shot | Usually slop. Some play full call shot, ball and pocket. |
 | Scratch penalty | One ball back per opponent is standard. Some spot only one ball total, or none if the scratcher has no balls left. |
 | Ball in hand | Behind the head string after a scratch is usual; some play ball in hand anywhere. |
