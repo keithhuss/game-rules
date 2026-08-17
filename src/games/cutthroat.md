@@ -63,7 +63,9 @@ Note what this is not: you never try to clear your own group. Your five balls ar
 
 The sets start **open** — nobody owns anything until balls start dropping.
 
-- The groups settle once a player has personally pocketed from **each of the other two sets** — the one set they haven't touched is, by elimination, their own. Sinking balls from only one other set doesn't settle anything yet: pot nothing but 6s and 9s and you've ruled out mid, but low and high both remain open until you touch one of those too.
+- The groups settle by elimination as balls are **pocketed**. Once a player has personally potted from both of the other two sets, the untouched third is theirs.
+
+  For example: Alice pots the 1 (low), misses. Bob pots the 4 (low), misses. Bill misses. Alice pots the 9 (mid) — she's now touched both low and mid, so by elimination she's **high**. That settles Bob and Bill too, with no new pot needed: only low and mid are left between them, and Bob already touched low back when he potted the 4, so he's **mid** and Bill is **low**.
 - Many tables instead play that group ownership follows **who pots first**: the first player to legally pocket a ball claims whichever set they like — usually the one they've just damaged least — the next player to pocket a ball picks from what's left, and the third is stuck with whatever remains.
 
 Agree which of those you're using before the break. It changes the whole opening.
