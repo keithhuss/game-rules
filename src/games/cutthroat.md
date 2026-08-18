@@ -5,7 +5,7 @@ eyebrow: Three players · Five balls each · Last one standing
 blurb: The three-player game. You own five balls and pocket everyone else's — survive with one on the table and you win.
 standfirst: >-
   The rules of play, in brief. Three players split the fifteen balls into groups
-  of five and set about clearing each other's. You never pot your own on purpose;
+  of five and set about clearing each other's. You almost never pot your own on purpose;
   the last player with a ball still on the table wins.
 footnote: Cutthroat has no governing body, so published rules differ on several points. This follows the most commonly played version; the variations are collected in rule 9.
 glossary:
@@ -65,7 +65,7 @@ The sets start **open** — nobody owns anything until balls start dropping.
 
 - The groups settle by elimination as balls are **pocketed**. Once a player has personally potted from both of the other two sets, the untouched third is theirs.
 
-  For example: Alice pots the 1 (low), misses. Bob pots the 4 (low), misses. Bill misses. Alice pots the 9 (mid) — she's now touched both low and mid, so by elimination she's **high**. That settles Bob and Bill too, with no new pot needed: only low and mid are left between them, and Bob already touched low back when he potted the 4, so he's **mid** and Bill is **low**.
+  For example: Jen pots the 1 (low), misses. Bob pots the 4 (low), misses. Bill misses. Jen pots the 9 (mid) — she's now touched both low and mid, so by elimination she's **high**. That settles Bob and Bill too, with no new pot needed: only low and mid are left between them, and Bob already touched low back when he potted the 4, so he's **mid** and Bill is **low**.
 - Many tables instead play that group ownership follows **who pots first**: the first player to legally pocket a ball claims whichever set they like — usually the one they've just damaged least — the next player to pocket a ball picks from what's left, and the third is stuck with whatever remains.
 
 Agree which of those you're using before the break. It changes the whole opening.
